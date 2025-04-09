@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.bildirimBox {
+    position: fixed;
+    z-index: 100;
+    height: 100px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.bildirimBox.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.bildirimBox h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.bildirimBox p {
+    color: #bdbdbd;
+    font-size: 14px;
+}
+
+.ball {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border: 3px solid orange;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    cursor: pointer;
+}
+
+.ball.Move {
+    top: calc(100% - 100px);
+    transition: top 2.5s ease;
+}
+
+.ball.Back {
+    top: 0%;
+    transition: top 2.5s ease;
+}
