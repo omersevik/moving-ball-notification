@@ -33,5 +33,5 @@ When the cursor leaves the ball, the animation resumes and the notification disa
 You can run the application instantly with no dependencies:
 
 ```bash
-git clone https://github.com/yourusername/moving-ball.git
+git clone https://github.com/omersevik/moving-ball.git
 cd moving-ball
